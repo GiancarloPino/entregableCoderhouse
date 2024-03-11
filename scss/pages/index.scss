@@ -1,0 +1,154 @@
+#hero{
+    @include flexbox( row, space-between, center);
+    height: 800px;
+    background-image: url('../imagenes/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    .text-main{
+        width: 20%;
+        padding: 20px;
+    }
+    h1{
+        font-size: 80px ;
+        font-weight: 600px;
+        margin-bottom: 32px;
+        color: white;
+    }
+    p{
+        color: white;
+        font-size: 24;
+        margin-bottom: 32px;
+    }
+    
+    .imagen-main {
+        display: flex;   
+        justify-content: right;      
+    }
+    .imagen-main img{
+        right: 0;
+        height: auto;
+    }
+}
+
+/*seccion para adopcion*/
+
+#seccion-adoptame{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+    background-color: lightgreen;
+    justify-content: space-between;
+    font-size: 15px;
+
+    .pet-adopt{
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 85%;
+        width: 25%;
+        border: 2px solid black;
+        border-radius: 20px;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    .img-adopt{
+        display: flex;
+        border-radius: 20px;
+        width: 80%;
+        height: 70%;
+        transition: all 0.2s ease;
+        &:hover{
+            width: 80% + 10%;
+            height: 70% + 10%;
+            transform: rotateY(360deg);
+            transition: all 1s ease;
+            
+        }
+    }
+}
+
+/*MEDIDA QUERY MOBILE */
+
+/*480PX <Pantalla> 0px*/
+
+@media (max-width: 480px){
+    #hero{
+        height: fit-content;
+            background-image: url('../imagenes/fondo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            padding: 20px;
+    
+            .text-main{
+                width: 80%;
+                padding: 0px;
+            }
+            h1{
+                font-size: 50px ;
+                font-weight: 600px;
+                margin-bottom: 32px;
+                color: white;
+            }
+            p{
+                color: white;
+                font-size: 24;
+                margin-bottom: 15px;
+            }
+            .boton {
+                width: fit-content;
+                background-color: white;
+                padding: 10px 20px;
+                border-radius: 8px;
+                color: cornflowerblue;
+                font-weight: 500;
+                text-decoration: none;
+            }
+            .imagen-main {
+                display: flex;   
+                justify-content: right;  
+            }
+            .imagen-main img{
+                right: 0;
+                height: auto;  
+            }
+    }
+    #seccion-adoptame{
+        
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        background-color: lightgreen;
+        justify-content: space-between;
+        font-size: 15px;
+        .pet-adopt{
+            
+            display: flex;
+            flex-direction: column;
+            height: 85%;
+            width: 80%;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 20px;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .img-adopt{
+            
+            border-radius: 20px;
+            width: 80%;
+            height: 70%;
+        }
+    }
+}

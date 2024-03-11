@@ -1,0 +1,33 @@
+footer{
+    padding: 20px 80px;
+    background-color: lightcoral;
+    height: fit-content;
+
+    li{
+        list-style-type: none;
+        text-decoration: none;
+        font-weight: 400;
+        color: black;
+        padding-right: 40px;    
+    }
+}
+
+/*MEDIDA QUERY MOBILE */
+
+/*480PX <Pantalla> 0px*/
+
+@media (max-width: 480px){
+
+    footer{
+        padding: 20px 80px;
+        background-color: lightcoral;
+        height: fit-content;
+        li{
+            list-style-type: none;
+            text-decoration: none;
+            font-weight: 400;
+            color: black;
+            padding-right: 40px;    
+        }
+    }
+    }

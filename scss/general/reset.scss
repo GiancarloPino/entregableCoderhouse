@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+//boton principal
+.btn {
+    width: fit-content;
+    background-color: white;
+    border-radius: 8px;
+    color: rgb(1, 43, 122);
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+
+.btn-primario {
+    @extend .btn;
+    padding: 10px 20px;
+    font-weight: 600;
+    &:hover{
+        background-color: rgb(40, 104, 69);
+        color: white;
+        padding: 20px 30px;
+        border: 2px solid rgb(26, 46, 6);
+    }    
+}
+
+.btn-secundario {
+    @extend .btn;
+    padding: 8px 15px;
+    font-weight: 500;
+    &:hover{
+        background-color: rgb(1, 43, 122);
+        color: white;
+    }     
+}
+
+
