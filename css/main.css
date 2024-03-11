@@ -15,6 +15,7 @@ a {
   color: rgb(1, 43, 122);
   font-weight: 500;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-primario {
@@ -31,6 +32,7 @@ a {
 .btn-secundario {
   padding: 8px 15px;
   font-weight: 500;
+  border: 2px solid rgb(26, 46, 6);
 }
 .btn-secundario:hover {
   background-color: rgb(1, 43, 122);
@@ -96,7 +98,11 @@ header .logo:hover {
   }
 }
 footer {
-  padding: 20px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
   background-color: lightcoral;
   height: fit-content;
 }
@@ -107,12 +113,23 @@ footer li {
   color: black;
   padding-right: 40px;
 }
+footer img {
+  width: 30px;
+  cursor: pointer;
+}
+footer .seccion-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: center;
+  text-align: center;
+}
 
 /*MEDIDA QUERY MOBILE */
 /*480PX <Pantalla> 0px*/
 @media (max-width: 480px) {
   footer {
-    padding: 20px 80px;
+    padding: 20px 20px;
     background-color: lightcoral;
     height: fit-content;
   }
@@ -158,7 +175,7 @@ footer li {
   height: auto;
 }
 
-/*seccion para adopcion*/
+/*SECCION PARA ADOPCION*/
 #seccion-adoptame {
   display: flex;
   flex-direction: row;
@@ -268,7 +285,7 @@ footer li {
   }
 }
 #hero-cita {
-  height: 800px;
+  height: fit-content;
   background-image: url("../imagenes/fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -276,10 +293,13 @@ footer li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*MEDIDA QUERY MOBILE */
+  /*480PX <Pantalla> 0px*/
 }
 #hero-cita .text-cita {
   font-size: 80px;
-  margin-bottom: 32px;
+  margin-top: 300px;
+  margin-bottom: 50px;
   color: white;
 }
 #hero-cita p {
@@ -288,6 +308,7 @@ footer li {
   color: white;
 }
 #hero-cita .seccion-centrada {
+  margin-bottom: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,42 +318,60 @@ footer li {
   background-color: white;
   border-radius: 30px;
 }
-
-/*MEDIDA QUERY MOBILE */
-/*480PX <Pantalla> 0px*/
+#hero-cita .input-formulario {
+  width: 80%;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#hero-cita .input-formularioinput.last-of-type {
+  height: 50%;
+}
+#hero-cita .galery {
+  display: flex;
+  width: 90%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+#hero-cita .galery img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: 1s ease;
+}
+#hero-cita .galery img:hover {
+  width: 500px;
+  opacity: 1;
+  filter: brightness(130%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
 @media (max-width: 480px) {
   #hero-cita {
-    height: 80%;
-    background-image: url("../imagenes/fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 800px;
     padding: 20px;
   }
   #hero-cita .text-cita {
-    font-size: 50px;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
   }
   #hero-cita p {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 32px;
     color: white;
+    text-align: center;
   }
   #hero-cita .seccion-centrada {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40%;
-    width: 60%;
-    background-color: white;
-    border-radius: 30px;
+    width: 90%;
   }
 }
+
 #hero-nosotros {
-  height: 800px;
+  height: 90%;
   background-image: url("../imagenes/fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -340,44 +379,47 @@ footer li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px;
+  padding: 50px;
   color: white;
+  /*MEDIDA QUERY MOBILE */
+  /*480PX <Pantalla> 0px*/
 }
 #hero-nosotros #banner {
   width: 100%;
   height: 100px;
-  margin-bottom: 70px;
+  padding-bottom: 300px;
 }
 #hero-nosotros .text-cita {
   font-size: 80px;
   margin-top: 200px;
   color: white;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 #hero-nosotros table {
-  margin: 60px;
+  margin: 5px;
   color: white;
-  padding: 20px;
+  padding: 10px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
-
-/*MEDIDA QUERY MOBILE */
-/*480PX <Pantalla> 0px*/
+#hero-nosotros table td {
+  width: 50%;
+  padding: 5px;
+}
+#hero-nosotros table td img {
+  width: 80%;
+  height: 300px;
+}
 @media (max-width: 480px) {
   #hero-nosotros {
     height: fit-content;
-    background-image: url("../imagenes/fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
+    padding: 10px;
     color: white;
   }
   #hero-nosotros #banner {
     width: 100%;
     height: 150px;
     margin: 50px;
+    padding: unset;
   }
   #hero-nosotros #banner img {
     height: auto;
@@ -386,6 +428,181 @@ footer li {
     font-size: 80px;
     margin-bottom: 32px;
     color: white;
+  }
+  #hero-nosotros table {
+    margin: 5px;
+    padding: 5px;
+  }
+  #hero-nosotros table td {
+    width: 50%;
+  }
+  #hero-nosotros table td img {
+    width: 95%;
+    height: unset;
+  }
+}
+
+#hero-registro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 800px;
+  background-image: url("../imagenes/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*MEDIDA QUERY MOBILE */
+  /*480PX <Pantalla> 0px*/
+}
+#hero-registro .text-cita {
+  font-size: 80px;
+  margin-top: 100px;
+  margin-bottom: 32px;
+  color: white;
+}
+#hero-registro p {
+  font-size: 60px;
+  margin-bottom: 32px;
+  color: white;
+}
+#hero-registro .seccion-centrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  width: 60%;
+  background-color: white;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+#hero-registro .seccion-centrada .input-formulario {
+  border: none;
+  border-bottom: 2px solid rgb(30, 102, 184);
+  width: 70%;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+#hero-registro .animacion {
+  height: 180px;
+  width: 90%;
+  background-image: url("../../imagenes/animacion/bk-animacion.svg");
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+#hero-registro .animacion:hover {
+  transform: rotateY(180deg);
+}
+#hero-registro .animacion img {
+  height: 120px;
+  position: absolute;
+  animation: moverImagen 2s linear infinite;
+}
+@keyframes moverImagen {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #hero-registro {
+    height: 800px;
+    padding: 20px;
+  }
+  #hero-registro .text-cita {
+    margin-top: 100px;
+    margin-bottom: unset;
+    font-size: 40px;
+  }
+  #hero-registro p {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  #hero-registro .seccion-centrada {
+    width: 90%;
+  }
+}
+
+#hero-contacto {
+  height: fit-content;
+  background-image: url("../imagenes/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*MEDIDA QUERY MOBILE */
+  /*480PX <Pantalla> 0px*/
+}
+#hero-contacto .text-cita {
+  font-size: 80px;
+  margin-top: 300px;
+  margin-bottom: 50px;
+  color: white;
+}
+#hero-contacto p {
+  font-size: 60px;
+  margin-bottom: 32px;
+  color: white;
+}
+#hero-contacto .paises {
+  width: 90%;
+  height: 150px;
+  background-image: url("../../imagenes/bk/bk.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+#hero-contacto .paises img {
+  width: 110px;
+  height: 110px;
+  box-shadow: 13px 14px 18px 5px rgba(0, 0, 0, 0.73);
+}
+#hero-contacto .paises img:hover {
+  cursor: pointer;
+}
+#hero-contacto .seccion-centrada {
+  width: 60%;
+  height: 300px;
+  margin-bottom: 60px;
+}
+#hero-contacto .seccion-centrada iframe {
+  border-radius: 15px;
+}
+@media (max-width: 480px) {
+  #hero-contacto {
+    height: 800px;
+    padding: 20px;
+  }
+  #hero-contacto .text-cita {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  #hero-contacto p {
+    font-size: 30px;
+    margin-bottom: 32px;
+    color: white;
+  }
+  #hero-contacto .paises img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 13px 14px 18px 5px rgba(0, 0, 0, 0.73);
+  }
+  #hero-contacto .paises img:hover {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
   }
 }
 

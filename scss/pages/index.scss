@@ -32,7 +32,7 @@
     }
 }
 
-/*seccion para adopcion*/
+/*SECCION PARA ADOPCION*/
 
 #seccion-adoptame{
     display: flex;
@@ -80,7 +80,7 @@
 
 @media (max-width: 480px){
     #hero{
-        height: fit-content;
+            height: fit-content;
             background-image: url('../imagenes/fondo.png');
             background-repeat: no-repeat;
             background-size: cover;

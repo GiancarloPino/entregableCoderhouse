@@ -1,7 +1,9 @@
 footer{
-    padding: 20px 80px;
+    @include flexbox( row, space-between, center);
+    padding: 20px 40px;
     background-color: lightcoral;
     height: fit-content;
+
 
     li{
         list-style-type: none;
@@ -9,6 +11,14 @@ footer{
         font-weight: 400;
         color: black;
         padding-right: 40px;    
+    }
+    img{
+        width: 30px;
+        cursor: pointer;
+    }
+    .seccion-redes{
+        @include flexbox( column,0, center);
+        text-align: center;
     }
 }
 
@@ -19,7 +29,7 @@ footer{
 @media (max-width: 480px){
 
     footer{
-        padding: 20px 80px;
+        padding: 20px 20px;
         background-color: lightcoral;
         height: fit-content;
         li{

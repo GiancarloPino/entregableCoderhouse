@@ -4,3 +4,9 @@
     justify-content: $jc;
     align-items: $ai;
 }
+
+@mixin media-query-mobile{
+    @media (max-width: 480px){
+        @content;
+    }    
+}

@@ -1,5 +1,5 @@
 #hero-cita{
-    height: 800px;
+    height: fit-content;
     background-image: url('../imagenes/fondo.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,8 +9,9 @@
     justify-content: center;
 
     .text-cita{
-        font-size: 80px;    
-        margin-bottom: 32px;
+        font-size: 80px;  
+        margin-top: 300px;  
+        margin-bottom: 50px;
         color: white;
     }
     p{
@@ -19,6 +20,7 @@
         color: white;
     }
     .seccion-centrada{
+        margin-bottom: 120px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,42 +30,60 @@
         background-color: white;
         border-radius: 30px;
     }
-}
-
-/*MEDIDA QUERY MOBILE */
-
-/*480PX <Pantalla> 0px*/
-
-@media (max-width: 480px){
-
-    #hero-cita{
-        height: 80%;
-        background-image: url('../imagenes/fondo.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+    .input-formulario{
+        width: 80%;
+        padding: 5px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        &input.last-of-type{
+            height: 50%;
+        }
+        
+    }
+    .galery{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 90%;
+        height: 300px;
+        margin-bottom: 20px;
+        img{
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            filter: brightness(80%);
+            transition: 1s ease;
+            &:hover{
+                width: 500px;
+                opacity: 1;
+                filter: brightness(130%);
+                transition: 0.5s ease;
+                cursor: pointer;
+            }
+        }
+    }
+    /*MEDIDA QUERY MOBILE */
+    /*480PX <Pantalla> 0px*/
+
+    @include media-query-mobile(){
+        height: 800px;
         padding: 20px;
-    
+
         .text-cita{
-            font-size: 50px;
+            font-size: 40px;
+            margin-top: 100px;
+            text-align: center;
         }
         p{
-            font-size: 40px;    
+            font-size: 30px;    
             margin-bottom: 32px;
             color: white;
+            text-align: center;
         }
         .seccion-centrada{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 40%;
-            width: 60%;
-            background-color: white;
-            border-radius: 30px;
+            width: 90%;
         }
+        
+        
     }
 }

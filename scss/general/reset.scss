@@ -16,6 +16,7 @@ a{
     color: rgb(1, 43, 122);
     font-weight: 500;
     text-decoration: none;
+    cursor: pointer;
     
 }
 
@@ -35,9 +36,11 @@ a{
     @extend .btn;
     padding: 8px 15px;
     font-weight: 500;
+    border: 2px solid rgb(26, 46, 6);
     &:hover{
         background-color: rgb(1, 43, 122);
         color: white;
+        
     }     
 }
 
