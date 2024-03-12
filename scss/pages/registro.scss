@@ -40,7 +40,10 @@
     .animacion{
         height: 180px;
         width: 90%;
-        background-image: url('../../imagenes/animacion/bk-animacion.svg');
+        background-image: url('../../imagenes/animacion/bk-ani.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         margin-bottom: 20px;
         position: relative;
         overflow: hidden;
