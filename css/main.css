@@ -487,7 +487,7 @@ footer .seccion-redes {
 #hero-registro .animacion {
   height: 180px;
   width: 90%;
-  background-image: url("../../imagenes/animacion/bk-ani.png");
+  background-image: url("../../imagenes/animacion/bk-ani.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -557,7 +557,7 @@ footer .seccion-redes {
 #hero-contacto .paises {
   width: 90%;
   height: 150px;
-  background-image: url("../../imagenes/ubi/bk-ubi-2.png");
+  background-image: url("../../imagenes/ubi/bk-ubi-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -568,7 +568,7 @@ footer .seccion-redes {
   margin-bottom: 50px;
 }
 #hero-contacto .paises:hover {
-  background-image: url("../../imagenes/ubi/bk-ubi-1.png");
+  background-image: url("../../imagenes/ubi/bk-ubi-2.jpg");
   transition: all 2 ease;
 }
 #hero-contacto .paises img {

@@ -23,7 +23,7 @@
     .paises{
         width: 90%;
         height: 150px;
-        background-image: url('../../imagenes/ubi/bk-ubi-2.png');
+        background-image: url('../../imagenes/ubi/bk-ubi-1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 15px;
@@ -33,7 +33,7 @@
         padding: 20px;
         margin-bottom: 50px;
         &:hover{
-            background-image: url('../../imagenes/ubi/bk-ubi-1.png');
+            background-image: url('../../imagenes/ubi/bk-ubi-2.jpg');
             transition: all 2 ease;
         }
         img{
